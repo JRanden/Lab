@@ -7,7 +7,7 @@ offlineHosts = []
 def checkPing(): 
     for ip in ipAddresses:
         try:
-            subprocess.run(["ping", "-c", "2", ip], capture_output=True, check=True, timeout=4)
+            subprocess.run(["ping", "-c", "1", ip], capture_output=True, check=True, timeout=2)
             onlineHosts.append(ip)
             print(f"{ip} er online")
         except (subprocess.TimeoutExpired, subprocess.CalledProcessError):
