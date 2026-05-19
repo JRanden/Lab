@@ -1,4 +1,4 @@
 
-Log parser program made to parse logs and use regex to look for status messages.
+Program laget for å andvende teknikker og lærdom fra Automate The Boring Stuff With Python.
 
-Made using concepts learned from "Automate The Boring Stuff With Python"
+Programmet tar en log fil med seperator \n ("newline") leser den og ser etter ERROR, WARNING og INFO. 
