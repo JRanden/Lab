@@ -3,3 +3,4 @@ Dette er et lab repo hvor jeg vil oppbevare ressurser, kode snippets og annen la
 
 ## Innhold
  [-Kubernetes](./Kubernetes/)
+  [-Python](./Python/)
