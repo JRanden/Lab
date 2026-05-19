@@ -1,0 +1,87 @@
+2024-03-01 08:02:11 INFO     Starting application server on port 8080
+
+2024-03-01 08:02:12 INFO     Loading configuration from /etc/app/config.json
+
+2024-03-01 08:02:13 INFO     Connected to database at 10.0.0.5:5432
+
+2024-03-01 08:02:14 INFO     Cache initialized — 512MB allocated
+
+2024-03-01 08:02:15 WARNING  Config key 'max_retries' not set, using default: 3
+
+2024-03-01 08:03:01 INFO     User login: user_id=1042 ip=192.168.1.14
+
+2024-03-01 08:03:45 INFO     User login: user_id=1099 ip=192.168.1.77
+
+2024-03-01 08:04:02 WARNING  Disk usage at 81% on /dev/sda1 — threshold is 80%
+
+2024-03-01 08:04:30 INFO     Scheduled job 'cleanup_temp' started
+
+2024-03-01 08:04:31 INFO     Scheduled job 'cleanup_temp' completed — 214 files removed
+
+2024-03-01 08:05:10 ERROR    Failed to connect to backup server at 10.0.0.9:22 — Connection refused
+
+2024-03-01 08:05:10 ERROR    Backup job 'daily_backup' aborted after 3 retries
+
+2024-03-01 08:06:00 INFO     Health check passed — all services running
+
+2024-03-01 08:07:15 WARNING  API response time exceeded 500ms (took 723ms) for /api/v1/users
+
+2024-03-01 08:08:44 INFO     User login: user_id=1003 ip=10.0.0.21
+
+2024-03-01 08:09:05 ERROR    Database query timeout after 30s — query: SELECT * FROM audit_log
+
+2024-03-01 08:09:06 WARNING  Falling back to read replica for non-critical queries
+
+2024-03-01 08:10:00 INFO     Health check passed — all services running
+
+2024-03-01 08:11:33 INFO     User logout: user_id=1042 session_duration=509s
+
+2024-03-01 08:12:01 WARNING  SSL certificate for api.internal expires in 14 days
+
+2024-03-01 08:13:22 INFO     Config reload triggered by SIGHUP
+
+2024-03-01 08:13:22 INFO     Configuration reloaded successfully
+
+2024-03-01 08:14:08 ERROR    Unhandled exception in worker thread: NullPointerException at TaskRunner.java:214
+
+2024-03-01 08:14:09 INFO     Worker thread restarted automatically
+
+2024-03-01 08:15:00 INFO     Health check passed — all services running
+
+2024-03-01 08:16:47 WARNING  Memory usage at 74% — approaching limit of 4096MB
+
+2024-03-01 08:17:02 INFO     User login: user_id=1201 ip=192.168.1.200
+
+2024-03-01 08:18:30 ERROR    Failed to write to log archive at /mnt/logs/archive — No space left on device
+
+2024-03-01 08:19:00 INFO     Health check passed — all services running
+
+2024-03-01 08:20:15 INFO     Scheduled job 'metrics_export' started
+
+2024-03-01 08:20:17 INFO     Scheduled job 'metrics_export' completed — 1024 data points exported
+
+2024-03-01 08:21:44 WARNING  Retrying failed request to payment gateway (attempt 2/3)
+
+2024-03-01 08:22:01 INFO     Payment gateway request succeeded on retry
+
+2024-03-01 08:23:00 INFO     Health check passed — all services running
+
+2024-03-01 08:24:30 ERROR    Authentication failure for user 'admin' from ip=185.220.101.45
+
+2024-03-01 08:24:31 ERROR    Authentication failure for user 'admin' from ip=185.220.101.45
+
+2024-03-01 08:24:32 ERROR    Authentication failure for user 'admin' from ip=185.220.101.45
+
+2024-03-01 08:24:33 WARNING  Repeated auth failures detected from 185.220.101.45 — rate limiting applied
+
+2024-03-01 08:25:00 INFO     Health check passed — all services running
+
+2024-03-01 08:26:11 INFO     User login: user_id=1099 ip=192.168.1.77
+
+2024-03-01 08:27:05 WARNING  Disk usage at 83% on /dev/sda1
+
+2024-03-01 08:28:00 INFO     Health check passed — all services running
+
+2024-03-01 08:29:44 ERROR    Queue 'email_outbox' depth exceeded limit: 5000 messages pending
+
+2024-03-01 08:30:00 INFO     Health check passed — all services running
