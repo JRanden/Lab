@@ -9,20 +9,26 @@ files_dict = {
 p = Path('.')
 #print(files.keys)
 # To do / flyt: 
-# Sjekke etter filtype
-# Sjekke om dir finnes, hvis ikke lage 
+# Sjekke etter filtype: DONE 
+# Sjekke om dir finnes, hvis ikke lage: 
 # Flytte filtyper til gitt mapper. 
 
-def check_dir(extensions, folders):
+def check_dir(extensions):
     
-    #
-    for object in extensions:
-        for entries in files_dict:
-            if object in (entries):
-                path = f".{files_dict[entries]}"
-                folder_path = Path(path)
-                print(f"In dict {object}")
-                if folder_path.exists():
+    print("ran dir check")
+    for values in extensions:
+        move_files(values)
+
+def move_files(extention):
+    # Funksjon som iterer og sjekker om filer er i listen over extenions og mapper
+    for dicts in files_dict:
+        #print(f"{dicts} entry")
+        if extention in dicts:
+            print(f"{files_dict[extention]} {extention}")
+        else:
+            #print(f"Warning {extention} does not have a folder selected")
+            continue
+            # print("Extention in dictionary!")
                 
 
 
@@ -38,7 +44,7 @@ def get_file_extensions():
         if items.is_dir():
             folders.append(items)
         
-    return file_extensions, folders
+    check_dir(file_extensions)
 
 
             
@@ -51,4 +57,4 @@ def get_file_extensions():
 # shutil.move()
 
 if __name__ == "__main__":
-    check_dir(get_file_extensions())
+    get_file_extensions()
